@@ -1,0 +1,8 @@
+list1 = list(map(int, input("輸入值為:").split(",")))
+list1.sort(reverse=True)
+a = "".join('%s' %id for id in list1)
+list1.sort()
+b = "".join('%s' %id for id in list1)
+a  = int(a)
+b = int(b)
+print("最大值數列與最小值數列差值為%s" %(a - b))
